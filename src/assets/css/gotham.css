@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Gotham";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("/src/assets/fonts/gotham/gothamcond_book.otf") format("opentype"),
+    url("/src/assets/fonts/gotham/gotham_medium.otf") format("opentype");
+    
+}
+
+@font-face{
+    font-family: "Gotham Light";
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src: url("/src/assets/fonts/gotham/gotham_light.otf") format("opentype");
+    
+}
+
+@font-face {
+    font-family: "Gotham Black";
+    font-style: normal;
+    font-weight: 900;
+    font-display: fallback;
+    src: url("/src/assets/fonts/gotham/gotham_black.otf") format("opentype");
+    
+}
+
+@font-face {
+    font-family: "Gotham Bold";
+    font-weight: 800;
+    font-style: normal;
+    font-display: fallback;
+    src: url("/src/assets/fonts/gotham/gotham_bold.otf") format("opentype");
+    
+}

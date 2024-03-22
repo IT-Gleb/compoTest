@@ -1,0 +1,19 @@
+@import url("gtBook.css");
+@import url("gothamPro.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    html, body{
+        @apply text-[1.1rem]/[1.2rem] bg-white text-slate-700 font-gotham font-normal flex flex-col;
+    }
+
+    .wrapper{
+        @apply max-w-[1600px] mx-auto;
+    }
+    h1{
+        @apply font-gothamPro font-[700] text-[32px]/[48px] tracking-[0.01em] text-[#071435];
+    }
+}
