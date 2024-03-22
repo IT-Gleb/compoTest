@@ -5,7 +5,7 @@ const props= withDefaults(defineProps<{isDisabled?:boolean; isError?:boolean, pa
 </script>
 
 <template>
-    <div class="xl:w-2/4 4xl:w-[732px] relative">
+    <div class="xl:w-2/4 4xl:min-w-[732px] relative">
     <input 
     type="text" 
     :placeholder="props.paramPlaceHolder" 

@@ -20,6 +20,15 @@ export function getNameCount(param: number) {
   let tempR: number = Number(abc[abc.length - 1]);
 
   if (param >= 10 && param <= 19) return (res = param + " штук");
+  if (param > 110) {
+    tempR = Number(abc.substring(abc.length - 2, abc.length));
+    //console.log(tempR);
+    if (tempR >= 10 && tempR <= 20) {
+      return (res = param + " штук");
+    } else {
+      tempR = Number(abc.substring(abc.length - 1, abc.length));
+    }
+  }
 
   switch (tempR) {
     case 0:
