@@ -5,11 +5,14 @@ export const B_URL: string = "/";
 export const PAGE_URL: string = B_URL + "page";
 
 export function formatCurrency(paramCurr: number) {
+  const deleteStr: string = ",00";
   let res: string = "";
   res = new Intl.NumberFormat("ru-RU", {
     style: "currency",
     currency: "RUB",
   }).format(paramCurr);
+
+  res = res.replace(deleteStr, "");
 
   return res;
 }
